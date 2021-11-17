@@ -5,6 +5,9 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Rubik', sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 header{
 
     height: 18vh;
