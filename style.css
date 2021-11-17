@@ -1,0 +1,321 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+header{
+
+    height: 18vh;
+    display: flex;
+}
+.logo{
+    position: absolute;
+    left: 17%;
+    top: 4%;
+    border-radius: nullpx;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+.logo h2{
+    position: absolute;
+    top:30%;
+    left: 120%;
+    font-size: 0.8rem;
+    color:  #F17400;
+}
+main{
+    display:grid;
+    grid-template-columns: 49% 49%;
+    justify-content: center;
+}
+.col1 h1{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 75px;
+    color: #121220;
+}
+.col1 form input{
+    height: 100px;
+    width: 400px;
+    text-align: center;
+}
+button{
+    margin-top: 30px;
+    width: 163px;
+    height: 100px;
+    background-color: #F17400;
+    text-align: center;
+    color: white;
+    border: none;
+}
+.video-tutorial{
+    align-items: center;
+    height: 10vh;
+    width: 20%;
+    display: flex;
+}
+.video-tutorial svg{
+    margin-top: 20px;
+}
+.col2{
+    position: relative;
+    display: flex;
+    z-index: 10;
+}
+.svg2{
+    position: absolute;
+    left: 170px;
+    top: 40%;
+    z-index: 10;
+}
+.svg3{
+    position: absolute;
+    left:70px;
+    top:80%;
+    z-index: 1;
+}
+nav{
+    flex: 9;
+    display: flex;
+    justify-content: center;
+}
+.login-form{
+    height: 14vh;
+    width: 70%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.login-form::after{
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 5%;
+    background-color:black ;
+    right:25%;
+}
+.login-form li{
+    margin-left: 20px;
+    list-style: none;
+}
+.login-form a{
+    color: #0000004D;
+    ;
+    text-decoration: none;
+}
+nav ul{
+    position: absolute;
+    top:5%;
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color: #0000004D;
+    ;
+    text-decoration: none;
+}
+nav ul li:first-child a{
+    color: black;
+    position: relative;
+}
+nav ul li:first-child a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 20%;
+    background-color: #334b04;
+    bottom: -5px;
+    right: 0;
+    transition: 1s;
+}
+nav ul li:last-child a{
+    background-color: #F17400;
+    padding:25px 35px;
+    border-radius: 5px;
+    color:white
+}
+nav ul li:hover a::after{
+    width: 100%;
+}
+.cards{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.card1{
+    margin-left: 1%;
+    width: 230px;
+    height: 250px;
+    background: linear-gradient(152.51deg, #82F4B1 -1.73%, #30C67C 102.44%);
+}
+.card2{
+    width: 230px;
+    height: 250px;
+    background: linear-gradient(152.51deg, #EDE342 -1.73%, #FF51EB 102.44%);
+
+}
+.card3{
+    width: 230px;
+    height: 250px;
+    background: linear-gradient(152.51deg, #0965C0 -1.73%, #C53A94 102.44%);
+
+}
+.image{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    margin-right: 5%;
+    margin-top: 10vh;
+    position: relative;
+}
+.footer-text{
+    margin-top:5vh;
+    width: 60%;
+    justify-content: space-between;
+    position: absolute;
+    display: flex;
+    top:40vh;
+}
+.footer-heading{
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+.articles{
+    height: 30vh;
+    gap:2rem;
+    position: absolute;
+    bottom:-5%;
+    margin-left: 75%;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.sec{
+    padding:1rem;
+    border-bottom: 1px solid black;
+}
+.sec i{
+    margin-left: 90%;
+}
+.menu {
+    display: none;
+}
+.menu-active{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: wheat;
+}
+.menu-active ul{
+    display: block;
+    margin-left: 40vw;
+    padding-top: 10vh;
+}
+.menu-active ul li{
+    margin: 10px;
+    list-style: none;
+}
+.menu-active ul li a{
+    color:white;
+    text-decoration: none;
+}
+.wrapper{
+    display: none;
+}
+.shown{
+    display: block;
+}
+i{
+    position: absolute;
+    bottom: 90%;
+    left: 90%;
+}
+@media screen and (max-width:768px) {
+    .menu{
+        position: absolute;
+        left: 95%;
+        top:1%
+    }
+    .logo{
+        margin-left: 30%;
+    }
+    body{
+        height: 150vh;
+    }
+    .menu{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 60%;
+    }
+    .col1 h1{
+        margin-right:25vw;
+        margin-left: 20vw;
+       text-align: center;
+       font-size: 4rem;
+       width: 100vw;
+    }
+    
+    .col1 form{
+        margin-left: 30vw;
+        margin-right: 20vw;
+        height: 40vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .col1 form input{
+        margin-top: 7vh;
+        height: 20vh;
+        width: 60vw;
+    }
+    .col1 form button{
+        width: 40vw;
+        height: 18vh;
+    }
+    .video-tutorial{
+        margin-left: 40vw;
+        width: 40vw;
+    }
+    .col2{
+        width: 100vw;
+    }
+    footer .cards {
+        margin-left: 40vw;
+        margin-right: 10vw;
+        width: 100vw;
+        padding-bottom: 50vh;
+    }
+    .card{
+        margin: 1vw;
+    }
+    .footer-text{
+        margin-top: 200px;
+    }
+    .footer-text div{
+        margin: 10px;
+    }
+    .articles{
+        padding-top: 70vh;
+        display: grid;
+        grid-template-columns: 90%;
+    }
+}
