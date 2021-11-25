@@ -7,7 +7,7 @@
 }
 
 header{
-
+    width: 1500px;
     height: 18vh;
     display: flex;
 }
@@ -86,8 +86,8 @@ nav{
     justify-content: center;
 }
 .login-form{
-    height: 14vh;
-    width: 70%;
+    height: 10vh;
+    width:1200px;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -96,9 +96,9 @@ nav{
     position: absolute;
     content: '';
     width: 3px;
-    height: 5%;
+    height: 4%;
     background-color:black ;
-    right:25%;
+    right:20%;
 }
 .login-form li{
     margin-left: 20px;
@@ -112,7 +112,8 @@ nav{
 nav ul{
     position: absolute;
     top:5%;
-    width: 45%;
+    width: 600px;
+    margin-right: 60px;
     display: flex;
     justify-content: space-around;
 }
@@ -182,7 +183,7 @@ footer{
     position: relative;
 }
 .footer-text{
-    margin-top:5vh;
+    margin-top:50px;
     width: 60%;
     justify-content: space-between;
     position: absolute;
@@ -327,5 +328,14 @@ i{
         padding-top: 70vh;
         display: grid;
         grid-template-columns: 90%;
+    }
+}
+@media screen and (max-width:1024px){
+    .login-form{
+        display: none;
+    }
+    .footer-text{
+        margin-left: 3vh;
+        margin-top: 40vh;
     }
 }
