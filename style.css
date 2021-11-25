@@ -282,7 +282,6 @@ i{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom:0.5vh;
     }
     .col1 form input{
         margin-top: 7vh;
@@ -291,7 +290,8 @@ i{
     }
     .col1 form button{
         width: 40vw;
-        height: 18vh;
+        height: 20vh;
+        margin-bottom:0.5vh;
     }
     .video-tutorial{
         margin-right:25vw;
