@@ -282,6 +282,7 @@ i{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom:0.5vh;
     }
     .col1 form input{
         margin-top: 7vh;
